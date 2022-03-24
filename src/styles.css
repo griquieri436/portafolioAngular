@@ -157,6 +157,10 @@ header .contenedor-textos .texto .profesion{
     text-align: justify;
 }
 
+.list-estyle{
+    list-style: none;
+}
+
 /*---- ---- Trabajos ---- ----*/
 
 .trabajos .contenedor{

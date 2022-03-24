@@ -2,21 +2,15 @@
     
     <div class="contenedor">
         <h3 class="titulo" >Estudios</h3>
-        <div class="estudio-contenedor"><!--estudio-->
-            <div class="descripcion-estudio">
-                <h4 class="tit-est">Título</h4>
-                <p class="des-est">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit libero, doloremque nostrum ea molestiae qui nam rem quasi maiores ipsam distinctio a vel laboriosam veritatis eum illum quae. Minima veniam, odio sed facere, vitae quisquam possimus voluptatum iure, officia porro neque exercitationem mollitia quam illo repellendus?</p>
+        <li class="list-estyle" *ngFor="let educacion of educationList">
+            <div class="estudio-contenedor"><!--estudio-->
+                <div class="descripcion-estudio">
+                    <h4 class="tit-est">{{educacion.title}}</h4>
+                    <p class="des-est">{{educacion.resume}}</p>
+                </div>
             </div>
-        </div>
-        <div class="estudio-contenedor"><!--estudio-->
-            <div class="descripcion-estudio">
-                <h4 class="tit-est">Título mas largo</h4>
-                <p class="des-est">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit libero, doloremque nostrum ea molestiae qui nam rem quasi maiores ipsam distinctio a vel laboriosam veritatis eum illum quae. Minima veniam, odio sed facere, vitae quisquam possimus voluptatum iure, officia porro neque exercitationem mollitia quam illo repellendus?</p>
-            </div>
-        </div>
-        <div class="edit">
-            <a href=""><i class="fa-solid fa-pencil"></i></a>
-        </div>
+            
+        </li>
     </div>
 
 </section>

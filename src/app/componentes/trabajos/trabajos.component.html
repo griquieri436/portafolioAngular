@@ -2,37 +2,22 @@
     <div class="contenedor">
         <h3 class="titulo" >Trabajos</h3>
         <div class="contenedor-trabajos">
-            <div class="trabajo">
-                <div class="thumb">
-                    <img src="img/trabajo1.jpg" alt="trabajo 1" >
+            <li class="list-estyle" *ngFor="let trabajo of trabajos">
+                <div class="trabajo">
+                    <div class="thumb">
+                         <img [src]="trabajo.img" alt="trabajo 1" >
+                    </div>
+                    <div class="desc-trabajo">
+                        <p class="nombre-trab">{{trabajo.titulo}}</p>
+                        <p class="categoria">{{trabajo.description}}</p>
+                    </div>
+                    <div class="edit">
+                        <a href=""><i class="fa-solid fa-pencil"></i></a>
+                    </div>
                 </div>
-                <div class="desc-trabajo">
-                    <p class="nombre-trab">Lorem ipsum dolor sit.</p>
-                    <p class="categoria">HTML - CSS - JS</p>
-                </div>
-            </div>
-            <div class="trabajo">
-                <div class="thumb">
-                    <img src="img/trabajo2.jpg" alt="trabajo 2">
-                </div>
-                <div class="desc-trabajo">
-                    <p class="nombre-trab">Lorem ipsum dolor sit2.</p>
-                    <p class="categoria">HTML - CSS - JS</p>
-                </div>
-            </div>
-            <div class="trabajo">
-                <div class="thumb">
-                    <img src="img/trabajo3.jpg" alt="trabajo 3">
-                </div>
-                <div class="desc-trabajo">
-                    <p class="nombre-trab">Lorem ipsum dolor sit3.</p>
-                    <p class="categoria">HTML - CSS - JS</p>
-                </div>
-            </div>
+            </li>
         </div>
-        <div class="edit">
-            <a href=""><i class="fa-solid fa-pencil"></i></a>
-        </div>
+        
     </div>
 
 </section>
